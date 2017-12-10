@@ -1,7 +1,10 @@
 package main
 
-import "github.com/beeceej/easy-tar-gz"
-import "os"
+import (
+	"os"
+
+	"github.com/beeceej/decompress"
+)
 
 func main() {
 	d := decompress.TGZDecompress{}
