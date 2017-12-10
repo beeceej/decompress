@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	d := decompress.TGZDecompress{}
-
-	d.Decompress(os.Args[1], os.Args[2])
+	new(decompress.TGZDecompress).
+		Decompress(os.Args[1], os.Args[2])
 }
